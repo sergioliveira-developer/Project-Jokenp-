@@ -1,29 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JokenPô</title>
     <link rel="stylesheet" href="./styles.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>JO KEN PÔ</title>
 
 <body>
-
+    <img src="./assets/rock-paper-scissor.png">
     <div class="container">
-        <h1>JokenPô</h1>
+        <h1>JO KEN PÔ</h1>
+        <h2>START GAME!</h2>
 
         <div class="buttons">
-            <button onclick="playHuman('rock')", id="rock">&#x1F44A;</button>
-            <button onclick="playHuman('paper')", id="paper">&#x1f590;</button>
-            <button onclick="playHuman('scissors')", id="scissors">&#x270c;</button>
+            <button onclick="playHuman('rock')" , id="rock">&#x1F44A;</button>
+            <button onclick="playHuman('paper')" , id="paper">&#x1f590;</button>
+            <button onclick="playHuman('scissors')" , id="scissors">&#x270c;</button>
         </div>
+
+        <h3>Score :</h3>
         <p class="result"></p>
-        <p class="your-score">Sua pontuação: <span id="human-score">0</span></p>
-        <p class="machine-score">Pontuação da Alexa: <span id="machine-score">0</span></p>
-
+        <p class="your-score">Your score: <span id="human-score">0</span></p>
+        <p class="machine-score">Alexa score: <span id="machine-score">0</span></p>
     </div>
-
 </body>
 
 <script src="./script.js"></script>

@@ -32,13 +32,13 @@ const playMachine = () => {
 
 const playTheGame = (human, machine) => {
     if (human === machine) {
-        result.textContent = "Deu empate"
+        result.textContent = "Equality"
     }
 
     else if (human === GAME_CHOICES.PAPER && machine === GAME_CHOICES.ROCK ||
         human === GAME_CHOICES.ROCK && machine === GAME_CHOICES.SCISSORS ||
         human === GAME_CHOICES.SCISSORS && machine === GAME_CHOICES.PAPER) {
-        result.textContent = "Você venceu!"
+        result.textContent = "You win!"
         scoreHumanNumber++
         humanScore.textContent = scoreHumanNumber
 
@@ -46,7 +46,7 @@ const playTheGame = (human, machine) => {
     else {
         scoreMachineNumber++
         machineScore.textContent = scoreMachineNumber
-        result.textContent = "Você perdeu para a Alexa!"
+        result.textContent = "You lost to Alexa!"
 
     }
 
