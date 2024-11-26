@@ -7,25 +7,26 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./assets/jokenpo-icon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <title>JO KEN PÔ</title>
 
 <body>
-    <img src="./assets/rock-paper-scissor.png">
+    <img src="./assets/rock-paper-scissor.png" alt="logo">
     <div class="container">
         <h1>JO KEN PÔ</h1>
         <h2>START GAME!</h2>
 
         <div class="buttons">
-            <button onclick="playHuman('rock')" , id="rock">&#x1F44A;</button>
-            <button onclick="playHuman('paper')" , id="paper">&#x1f590;</button>
-            <button onclick="playHuman('scissors')" , id="scissors">&#x270c;</button>
+            <button type="button" onclick="playHuman('rock')" , id="rock">&#x1F44A;</button>
+            <button type="button" onclick="playHuman('paper')" , id="paper">&#x1f590;</button>
+            <button type="button" onclick="playHuman('scissors')" , id="scissors">&#x270c;</button>
         </div>
 
         <h3>Score :</h3>
         <p class="result"></p>
         <p class="your-score">Your score: <span id="human-score">0</span></p>
-        <p class="machine-score">Alexa score: <span id="machine-score">0</span></p>
+        <p class="machine-score">IA score: <span id="machine-score">0</span></p>
     </div>
 </body>
 

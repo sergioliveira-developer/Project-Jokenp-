@@ -27,7 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: rgb(10, 23, 19);
+ background: url(./assets/backgrpund.jpg);
   background-size: cover;
   min-height: 100vh;
 }
